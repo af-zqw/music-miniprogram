@@ -1,0 +1,107 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false
+	},
+	"appid": "wx2c9c8a904b5b9f1e",
+	"projectname": "wxcMovie",
+	"libVersion": "2.8.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "comment",
+					"pathName": "pages/comment/comment",
+					"query": "movieid=26667010"
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "music",
+					"pathName": "pages/playlist/playlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "歌单详情",
+					"pathName": "pages/musiclist/musiclist",
+					"query": "playlistId= 2935073408",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/player/player",
+					"pathName": "pages/player/player",
+					"query": "index=4",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/blog/blog",
+					"pathName": "pages/blog/blog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布博客",
+					"pathName": "pages/blog-edit/blog-edit",
+					"query": "nickName=\"Aqing\"&avatarUrl: \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKJJ3xve…VXaXOrrTH3ff8ygLMBjWGicY06Emavicn3pLibSZicAaQ/132\"",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/blog-comment/blog-comment",
+					"pathName": "pages/blog-comment/blog-comment",
+					"query": "blogId=f885cb355d81e30900080785635b1560",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人页面",
+					"pathName": "pages/profile/profile",
+					"query": "playlistId= 2935073408",
+					"scene": null
+				}
+			]
+		}
+	}
+}

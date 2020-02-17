@@ -1,0 +1,15 @@
+<block wx:for="{{musiclist}}" wx:key="{{index}}">
+  <!-- 小程序的动态class直接写在里面就可以 -->
+  <view class="musiclist-container {{item.id == playingId ? 'playing' : ''}}" bind:tap="onSelect" data-musicid="{{item.id}}" data-index="{{index}}">
+  <!-- 小程序绑定点击事件不能直接传参数给函数，而需要用data-绑定数据，然后在事件的参数中获取 -->
+    <view class="musiclist-index">{{index+1}}</view>
+    <view class="musiclist-info">
+      <view class="musiclist-name">
+        {{item.name}}
+        <!--item.alia为歌曲的别名，有的话展示在歌曲的后面  -->
+        <text class="music-alia">{{item.alia.length==0?"":item.alia[0]}}</text>
+      </view>
+      <view class="musiclist-singer">{{item.ar[0].name}} - {{item.al.name}}</view>
+    </view>
+  </view>
+</block>

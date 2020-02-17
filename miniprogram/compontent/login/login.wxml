@@ -1,0 +1,7 @@
+<af-bottom-modal modalShow="{{modalShow}}">
+  <view slot="modal-content">
+    <button class="login"
+            open-type="getUserInfo"
+            bindgetuserinfo="onGotUserInfo">获取微信受权信息</button>
+  </view>
+</af-bottom-modal>

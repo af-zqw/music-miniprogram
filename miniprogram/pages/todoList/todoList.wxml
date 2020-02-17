@@ -1,0 +1,43 @@
+<view class='todoList-title'>添加任务</view>
+<view class='input-wrapper'>
+  <input class="todo-input" bindinput="setInput" value='{{inputValue}}' placeholder='输入你想做的事'></input>
+  <van-button class='input-btn' type="primary" catchtap='addTodo'>添加</van-button>
+</view>
+<view class='todoList-wrapper'>
+  <view class='todoList-tip' wx:if="{{!notOkList.length}}">还没有任务哦</view>
+  <view class='todoList-item' wx:for="{{notOkList}}" wx:key="{{index}}">
+    <view>
+      <text>{{item.content}}</text>
+      <text class='todoList-date'>---{{item.createDate}}</text>
+    </view>
+    <view>
+      <van-button type="primary" size='mini' data-todoid='{{item._id}}' catchtap='complateTodo'>完成</van-button>
+      <van-button plain type="danger" data-todoid='{{item._id}}' catchtap='delTodo' size='mini'>删除</van-button>
+    </view>
+  </view>
+</view>
+<van-tabs>
+  <van-tab title="已完成">
+    <view class='okList-tip' wx:if="{{!okList.length}}">还没有完成任务哦</view>
+    <view class='todoList-item' wx:for="{{okList}}" wx:key="{{index}}">
+      <view>
+        <text>{{item.content}}  </text>
+        <text class='todoList-date'>创建于:{{item.createDate}}   完成于:{{item.complateDate}}</text>
+      </view>
+      <view>
+        <van-button plain type="danger" size='mini' data-todoid='{{item._id}}' catchtap='delTodo'>删除</van-button>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="全部任务">
+  <view class='okList-tip' wx:if="{{!allList.length}}">还没有任务哦</view>
+    <view class='todoList-item allList-item' wx:for="{{allList}}" wx:key="{{index}}">
+      <view>
+        <text>{{item.content}}  </text>
+        <text class='todoList-date'>创建于:{{item.createDate}}    </text>
+        <text class='todoList-date' wx:if="{{item.complateDate}}">完成于:{{item.complateDate}}</text>
+        <text class='todoList-date' wx:else>未完成</text>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

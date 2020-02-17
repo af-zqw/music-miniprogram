@@ -1,0 +1,12 @@
+<view class="index-container">
+  <view class='icon-wrapper'>
+    <view class='img-conent' catchtap='gotoTodoList'>
+      <image src='../../images/todoList.png' class='image'></image>
+      <text class='desc'>任务列表</text>
+    </view>
+    <view class='img-conent' catchtap='gotoMovie'>
+      <image src='../../images/movie.png' class='image'></image>
+      <text class='desc'>最近电影</text>
+    </view>
+  </view>
+</view>

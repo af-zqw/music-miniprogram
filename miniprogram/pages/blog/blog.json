@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "af-search": "/compontent/search/search",
+    "af-login": "/compontent/login/login",
+    "af-blog-card": "/compontent/blog-card/blog-card",
+    "af-blog-ctrl": "/compontent/blog-ctrl/blog-ctrl"
+  },
+  "enablePullDownRefresh": true
+}

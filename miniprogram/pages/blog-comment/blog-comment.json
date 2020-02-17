@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "af-blog-card":"/compontent/blog-card/blog-card",
+    "af-blog-ctrl":"/compontent/blog-ctrl/blog-ctrl"
+  },
+  "navigationBarTitleText": "分享详情"
+}

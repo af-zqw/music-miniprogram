@@ -1,0 +1,10 @@
+/**app.wxss**/
+.van-button--primary{
+  background-color: #42cccc !important;
+  border:1px solid #42cccc !important;
+}
+.van-tabs__line{
+  background: #42cccc !important;
+  display: none;
+}
+@import "iconfont.wxss"

@@ -1,0 +1,16 @@
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <af-blog-card blog="{{item}}"
+                      bindtap="goComment"
+                      data-blogid="{{item._id}}">
+        </af-blog-card>
+        <af-blog-ctrl iconfont="iconfont"
+                      icon-fenxiang="icon-fenxiang"
+                      icon-pinglun="icon-pinglun"
+                      blogId="{{item._id}}"
+                      blog="{{item}}">
+        </af-blog-ctrl>
+      </view>
+    </block>
+  </view>

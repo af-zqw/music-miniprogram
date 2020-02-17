@@ -1,0 +1,32 @@
+<scroll-view scroll-y="true" class="scroll-wrapper">
+  <view class="blog-card">
+    <af-blog-card blog="{{blog}}"></af-blog-card>
+  </view>
+
+  <view class="tab">
+    <view class="tab-item"><i class="iconfont icon-iconfront-"></i>评论列表</view>
+  </view>
+
+  <view class="tip-text" wx:if="{{commentList.length==0}}"><i class="iconfont icon-meiyoupinglun"></i>还没评论哦</view>
+
+  <block wx:for="{{commentList}}" wx:key="{{index}}">
+    <view class="comment">
+      <view class="comment-title">
+        <image class="comment-portrait" src="{{item.avatarUrl}}"></image>
+        <text class="comment-nickname">{{item.nickName}}</text>
+      </view>
+      <view class="comment-content">
+        {{item.content}}
+      </view>
+      <view class="comment-time">{{item.createTime}}</view>
+    </view>
+  </block>
+</scroll-view>
+
+<view class="blog-ctrl">
+  <af-blog-ctrl iconfont="iconfont"
+                icon-fenxiang="icon-fenxiang"     
+                icon-pinglun="icon-pinglun"
+                blogId="{{blog._id}}"
+                bind:refreshCommentList="_getBlogDetail"></af-blog-ctrl>
+</view>

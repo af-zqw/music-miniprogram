@@ -1,0 +1,40 @@
+/* compontent/blog-card/blog-card.wxss */
+page{
+  background: #f1f1f1;
+}
+.blog{
+  padding: 20rpx;
+  background: #fff;
+}
+.blog-title{
+  display: flex;
+  align-items: center;
+}
+.blog-box .blog-time{
+  font-size: 28rpx;
+  color: #333;
+  padding: 6rpx 0;
+}
+.blog-box .blog-name{
+  font-size: 32rpx;
+}
+.blog-portrait{
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.blog-content{
+  padding: 10rpx 10rpx 24rpx;
+  font-size: 34rpx;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.blog-img .img{
+  width: 230rpx;
+  height: 230rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.blog-img .img:nth-child(3n) {
+  margin-right: 0;
+}

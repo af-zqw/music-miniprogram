@@ -1,0 +1,58 @@
+.todoList-title{
+  padding: 30rpx 20rpx 0;
+}
+.input-wrapper{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.todo-input{
+  width: 78%;
+  height: 66rpx;
+  border: 1px solid #ccc;
+  border-radius: 6rpx;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+.van-button{
+  vertical-align: middle;
+  height: 70rpx !important;
+  line-height: 70rpx !important;
+}
+.todoList-wrapper{
+  margin-top: 20rpx;
+}
+.todoList-tip{
+  margin-bottom:40rpx;
+  margin-left:20rpx;
+}
+.todoList-item{
+  padding: 10rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.todoList-item .van-button{
+  height: 60rpx !important;
+  line-height: 60rpx !important;
+  font-size: 24rpx !important;
+  width: 80rpx !important;
+}
+.todoList-date{
+  font-size: 24rpx;
+  color: #ccc;
+}
+.allList-item{
+  height: 70rpx;
+}
+.okList-tip{
+  margin-left:20rpx;
+  margin-top:30rpx;
+}
+.van-tab--active{
+  color: #42cccc !important;
+}

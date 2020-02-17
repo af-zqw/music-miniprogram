@@ -1,0 +1,63 @@
+.profile-header{
+  background-image: linear-gradient(125deg,#2c3e50,#42cccc,#2980b9,#42cccc,#8e44ad);
+  background-size:400%;
+  animation: bgAnimation 15s infinite;
+  height: 480rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); 
+}
+.avatar-url{
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  overflow: hidden;
+  border: 6rpx solid #fff;
+  border-radius: 50%;
+}
+.nickName{
+  margin-top: 20rpx;
+  font-size: 38rpx;
+}
+.nav{
+  padding: 30rpx;
+}
+.nav-item{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+  align-items: center;
+  /* width: 100%; */
+  border-bottom: 1rpx #ece9e9 solid;
+}
+.content{
+  width: 100%;
+  padding: 10rpx 20rpx;
+}
+.content .icon-xiangyou{
+  float: right;
+  margin-right: 20rpx;
+}
+.content .icon-color{
+  color: #42cccc;
+}
+.content .text{
+  margin-left: 20rpx;
+  font-size: 34rpx;
+}
+
+@keyframes bgAnimation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

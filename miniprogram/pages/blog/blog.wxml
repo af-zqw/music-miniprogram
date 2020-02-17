@@ -1,0 +1,35 @@
+<view class="container">
+<!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bindtap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <!-- 小程序的组件无法使用全局的class，需要通过page传递过去 -->
+      <af-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch"/>
+    </view>
+  </view>
+  <!-- 博客卡片 -->
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <af-blog-card blog="{{item}}"
+                      bindtap="goComment"
+                      data-blogid="{{item._id}}">
+        </af-blog-card>
+        <af-blog-ctrl iconfont="iconfont"
+                      icon-fenxiang="icon-fenxiang"
+                      icon-pinglun="icon-pinglun"
+                      blogId="{{item._id}}"
+                      blog="{{item}}">
+        </af-blog-ctrl>
+      </view>
+    </block>
+  </view>
+
+  <!-- 底部弹出层 -->
+  <af-login modalShow="{{modalShow}}"
+            bind:loginsuccess="onLoginsuccess"
+            bind:loginfail="onLoginfail">
+  </af-login>
+</view>

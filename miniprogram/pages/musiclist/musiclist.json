@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "af-musiclist": "/compontent/musiclist/musiclist"
+  },
+  "navigationBarTitleText": "歌单详情"
+}

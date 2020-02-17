@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "af-playlist":"/compontent/playlist/playlist"
+  },
+  "enablePullDownRefresh": true
+}
